@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 1, 3);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(64, 64, 65);
+    gap: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+header #titleImg{
+    margin: 5px 10px;
+}
+
+header #titleImg img{
+    height: 75px;
+    width: auto;  
+}
+
+.navigation{
+    display: flex;
+    margin: 5px 10px 5px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .navButton{
+    font-family: 'Impact', sans-serif;
+    background-color: rgb(236,67,0);
+    border-radius: 20px;
+
+    color: white;
+
+    margin: 5px 10px 5px auto;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navigation .navButton:hover{
+    background-color: rgb(239, 118, 69);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.content .pageHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 1, 3);
+    color:whitesmoke;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(180, 176, 176);
+    display: block;
+    transition: border-color 0.2s;
+}
+
+.profile_button:hover img {
+    border-color: #f07830;
+}
+
+.footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(42, 42, 42);
+    margin-top: 10%;
+    padding: 2px;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+  
+  color:aliceblue;
+  width:20%;
+  height: auto;
+  flex: 1;
+  
+}
+
+.footer-three {
+  justify-content: flex-end;
+  flex: initial;
+  margin: 10px;
+}
+
+.footer-one, .footer-two {
+  flex: initial;
+ 
+  margin: 10px;
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 10000;
+}
+
+#overlay.show{
+    display: flex;
+}
+
+#errorBox{
+    background-color: rgb(0, 1, 3);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#errorBox.hideConfirm .errorBoxButton button:last-child{
+    display: none;
+}
+
+#errorBox .errorBoxButton{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+#errorBox .errorBoxButton button{
+    min-width: 75px;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(236,67,0);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#errorBox .errorBoxButton button:hover{
+    background-color: rgb(143, 54, 21);
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;          
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-wrapper.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    width: 50%;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: white;
+    font-family: Arial, sans-serif;
+
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 { 
+    margin: 0; 
+    color: orange; 
+}
+
+.close-btn { 
+    font-size: 24px; 
+    cursor: pointer; 
+    color: #888; 
+}
+
+.close-btn:hover { 
+    color: white; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 13px; 
+    color: orange; 
+    font-weight: bold; 
+}
+
+.form-group input, .form-group select {
+    background-color: #262626;
+    border: 1px solid #444;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.cancel-btn { 
+    background: #333; 
+    color: white; 
+    border: none; 
+    padding: 10px 16px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+}
+
+.save-btn { 
+    background: orange; 
+    color: black; 
+    border: none; 
+    padding: 10px 16px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+

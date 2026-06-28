@@ -1,0 +1,203 @@
+.content .backButton{
+    background-color:azure;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0px;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.content .backButton img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+.content .backButton:hover{
+  background-color: rgb(83, 88, 88);
+}
+
+.content .pageHeader .pageTitle{
+    margin-right: auto;
+}
+
+.content .pageHeader .pageTitle h2{
+    margin: 10px;
+}
+.content .cartList{
+    min-height: 600px;
+    background-color: rgb(94, 94, 95);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart{
+    display:flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    background-color: rgb(0, 1, 3);
+    width: auto;
+    margin: auto;
+    min-height: 75px;
+    color:whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .cartList #cartEmptyError{
+    display: flex;
+    background-color: rgb(230, 183, 83);
+    border-radius: 10px;
+    width: auto;
+    margin: 10px 20px;
+    text-align: center;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .cartList .cartItem{
+    background-color: rgb(230, 183, 83);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.content .cartList .cartItem:hover{
+    transform: translateY(-1.5px);
+}
+
+.content .cartList .cartItem .cartMain{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;              
+    gap: 10px;
+    min-width: 0; 
+}
+
+.content .cartList .cartItem .cartMain .cartVideoImage{
+    align-items: center;
+    justify-content: center;
+    margin: auto 5px;
+}
+
+.content .cartList .cartItem .cartMain .cartVideoImage img{
+    max-height: 100px;
+    height: 100%;
+    width: auto;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.content .cartList .cartItem .cartMain .cartItemDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 180px;
+    margin: 5px 0px;
+}
+
+.content .cartList .cartItem .cartMain .cartItemDetails .cartVideoName h2{
+    margin: 5px;
+}
+
+.content .cartList .cartItem .cartMain .cartRentalDetail{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 20px 5px auto;
+}
+
+.content .cartList .cartItem .cartRemoveItem{
+    margin: auto 10px;
+    align-self: flex-end;
+}
+
+.content .cartList .cartItem .cartRemoveItem .cartRemoveButton{
+    margin: auto 10px;
+    background-color: red;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content .cartList .cartItem .cartRemoveItem .cartRemoveButton:hover{
+    background-color: rgb(134, 17, 17)
+}
+
+.content .cartList .cartItem .cartRemoveItem .cartRemoveButton img{
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: auto;
+}
+
+@media (max-width: 600px) {
+    .content .cartList .cartItem {
+        flex-direction: column;
+    }
+
+    .content .cartList .cartItem .cartRemoveItem {
+        align-self: flex-end;
+        margin-top: 8px;
+    }
+}
+
+.cart{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cart .itemAmount{
+    margin:5px auto 5px 10px;
+}
+
+.cart .cartPrice{
+    margin: 5px 10px 5px auto;
+}
+
+.cart .payment{
+    background-color: rgb(236,67,0);
+    margin: 5px 10px 5px 20px;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 2px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cart .payment img{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.cart .payment p{
+    margin: auto 5px;
+}
+
+.cart .payment:hover{
+    background-color: rgb(143, 54, 21);
+}
+

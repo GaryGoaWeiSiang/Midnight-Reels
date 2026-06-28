@@ -1,0 +1,115 @@
+
+.content .backButton{
+    background-color: rgb(255,255,255);
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    padding: 0px;
+    margin: 10px auto 10px 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content .backButton:hover{
+    background-color: rgb(120, 120, 123);
+}
+
+.content .backButton img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+.content{
+    color:rgb(255,255,255);
+    text-align: center;
+}
+
+.content .videoImage{
+    margin: 5px auto 5px auto;
+}
+
+.content .videoImage img{
+    height: 200px;
+    width: auto;
+}
+
+.content .videoName, .content .description{
+    text-align: center;
+    margin: 10px;
+}
+
+.content .videoDetails{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.content .videoDetails .videoGenre, .content .videoDetails .videoDuration, .content .videoDetails .videoReleaseDate,.content .videoDetails .videoPrice, .content .videoDetails .videoAvailable{
+    width: 300px;
+    height: auto;
+}
+
+.content .cartForm {
+    background-color:rgb(114, 114, 115);
+    margin: 10px;
+    height: max-content;
+}
+
+.content .cartForm .rentalDetailForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+    background-color:rgb(64, 64, 65);
+    border-radius: 10px;
+    
+}
+
+.content .cartForm .rentalDetailForm .formLabel{
+    margin: 5px auto;
+}
+
+.content .cartForm .rentalDetailForm .formInputArea{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.content .cartForm .rentalDetailForm .formInputArea .formInput{
+    flex: 1;
+    min-width: 140px;
+}
+
+.content .cartForm .rentalDetailForm .formInputArea .formInput .formEnter input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+}
+
+.content .cartForm .rentalDetailForm .formButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content .cartForm .rentalDetailForm .formButton button {
+    width: 80%;
+    max-width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(236,67,0);
+    color: rgb(255,255,255);
+    font-family: 'Impact', sans-serif;;
+}
+
+

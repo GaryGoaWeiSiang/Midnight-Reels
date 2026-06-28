@@ -1,0 +1,226 @@
+body{
+    font-family: 'Impact', sans-serif;
+    background-color: rgb(23, 23, 23);
+}
+
+.profile_button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(180, 176, 176);
+    display: block;
+    transition: border-color 0.2s;
+}
+
+.profile_button:hover img {
+    border-color: #f07830;
+}
+
+
+.introduction{
+    display:flex;
+    background-color:rgb(180, 176, 176);
+    justify-content: space-around;
+    margin-top: 5%;
+    padding:2%;
+    align-items: center;
+}
+
+
+.text{
+    margin-left: 50px;
+    margin-right: 5%;
+}
+
+.intrologo{
+    margin-left: 5%;
+    margin-right: 10px;
+}
+
+@media (min-width: 1000px) {
+    .introductionlogo{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    min-width:300px;
+    height:auto;
+    transition: width 1s ease-in-out;
+}
+}
+
+@media (min-width: 700px) and (max-width: 999px){
+    .introduction{
+        flex-direction: column;
+        text-align: center;
+    }
+    .introductionlogo{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 250px;
+    height:auto;
+    transition: width 1s ease-in-out;
+}
+}
+
+@media (min-width: 200px) and (max-width: 699px){
+    .introduction{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introductionlogo{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    max-width:200px;
+    height:auto;
+    transition: width 1s ease-in-out;
+}
+}
+
+
+#newRelease{
+    display: flex;
+    flex-direction: column;
+}
+
+#newRelease .sectionTitle{
+    margin: 10px;
+}
+
+#newRelease .newVideoList{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 5px 0px;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(94, 94, 95);
+    min-height: 350px;
+    border-radius: 5px;
+}
+
+#newRelease .newVideoList #noVideoError{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#newRelease .newVideoList .video{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 1, 3);
+    padding: 5px;
+    border-radius: 10px;
+    width: 150px;
+    height: max-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#newRelease .newVideoList .video .imageLink{
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#newRelease .newVideoList .video img{
+    margin: auto;
+    height: 150px;
+    width: auto;
+    transition: height 0.3s ease-in-out;
+    margin: auto;
+}
+
+#newRelease .newVideoList .video img:hover{
+    height: 200px;
+    width: auto;
+    transition: height 0.3s ease-in-out;
+}
+
+#newRelease .newVideoList .video h3, #newRelease .newVideoList .video h4{
+    color: rgb(255, 255, 255);
+    margin: 5px 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#newRelease .newVideoList .video h3{
+    height: 50px;
+}
+
+#newRelease .newVideoList .video h4{
+    height: 20px;
+}
+
+.viewButton{
+    width:fit-content;
+    height:auto;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: orange;
+    margin: 10px auto;
+    text-decoration: none;
+    
+}
+
+.viewButton:hover{
+    transform: translateY(-1.5px);
+}
+
+.viewButtonLink{
+    margin-top: auto;
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.viewButtonLink:hover{
+    color:gray;
+}
+
+.content .videoList .video h3{
+    height: 50px;
+}
+
+.content .videoList .video h4{
+    height: 20px;
+}
+
+.content .videoList .video .videoName,.content .videoList .video .price{
+    overflow: hidden;
+}
+
+.footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(42, 42, 42);
+    margin-top: 10%;
+    padding: 2px;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+  
+  color:aliceblue;
+  width:20%;
+  height: auto;
+  flex: 1;
+  
+}
+
+.footer-three {
+  justify-content: flex-end;
+  flex: initial;
+  margin: 10px;
+}
+
+.footer-one, .footer-two {
+  flex: initial;
+ 
+  margin: 10px;
+}

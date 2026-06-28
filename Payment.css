@@ -1,0 +1,119 @@
+.paymentContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;;
+  margin:10px;
+
+}
+
+.paymentContainer .pageHeader{
+  margin-right: auto;
+}
+
+.paymentContainer .pageHeader .backButton{
+    background-color:azure;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.paymentContainer .pageHeader .backButton:hover{
+  background-color: rgb(83, 88, 88);
+}
+
+.paymentContainer .pageHeader .backButton img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+.paymentMain{
+    display: flex;
+    background-color: rgb(58, 58, 58);
+    align-items: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+
+    width:80%;
+    height:auto;
+    margin:10px;
+    border-radius: 20px;
+}
+
+#paymentTitle{
+  margin: 10px;
+}
+
+
+.paymentForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:10px;
+  padding:10px;
+}
+
+.paymentMethodContainer{
+  display:flex;
+  justify-content: center;
+  background-color: #f07830 ;
+  flex-direction: row;
+  align-items: center;
+
+  border-radius: 20px;
+  width:100%;
+  gap:20px;
+  padding:20px;
+  height:auto;
+  margin:10px;
+  flex-wrap: wrap;
+}
+
+.paymentMethodImage{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  padding:10px;
+  cursor: pointer;
+  flex:1;
+
+}
+
+.paymentImage{
+  width:100px;
+  height: auto;
+}
+
+.paymentMethodImage:hover{
+  border: 3px solid rgb(156, 156, 156);
+  transform: translateY(-1.5px);
+}
+
+.paymentMethodImage.selected {
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+.paymentSubmit{
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#paymentSubmitButton{
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#paymentSubmitButton:hover{
+  background-color: rgb(158, 156, 155);
+}
